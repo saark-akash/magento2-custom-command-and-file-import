@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    ...
+    <type name="Magento\Framework\Console\CommandListInterface">
+        <arguments>
+            <argument name="commands" xsi:type="array">
+                <item name="akash_customer_import_command" xsi:type="object">Akash\MageTest\Console\Command\SomeCommand</item>
+            </argument>
+        </arguments>
+    </type>
+    <preference for="Akash\MageTest\Api\CreateCustomerRespositoryInterface" type="Akash\MageTest\Model\CreateCustomerRespository" />
+    <preference for="Akash\MageTest\Api\ReadFileRepositoryInterface" type="Akash\MageTest\Model\ReadFileRepository" />
+</config>

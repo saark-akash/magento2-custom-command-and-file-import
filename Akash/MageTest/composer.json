@@ -1,0 +1,25 @@
+{
+    "name": "akash/module-magetest",
+    "description": "N/A",
+    "type": "magento2-module",
+    "license": [],
+    "config": {
+        "sort-packages": true
+    },
+    "version": "",
+    "require": {
+        "php": "~8.2.0||~8.3.0",
+        "magento/framework": "103.0.*",
+        "magento/module-customer": "103.0.*"
+    },
+    "suggest": {},
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Akash\\MageTest\\": ""
+        }
+    }
+}
+

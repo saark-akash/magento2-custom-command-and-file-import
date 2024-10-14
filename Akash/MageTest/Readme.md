@@ -1,5 +1,3 @@
-# magento2-custom-command-and-file-import
-
 1) Run the command to import the customer
 bin/magento customer:import sample-csv sample.csv
 bin/magento customer:import sample-json sample.json
